@@ -34,7 +34,7 @@ Future main() async {
           DateTime.fromMillisecondsSinceEpoch(response.data['dt'] * 1000);
 
       print(
-          'Temperatura de ${response.data['main']['temp'].toStringAsFixed(2)} C° com ${response.data['weather'][0]['description']} em ${response.data['name']} no dia ${formataData(data.toString(), isData: true)} às ${formataData(data.toString(), isData: false)}');
+          'Temperatura de ${response.data['main']['temp'].toStringAsFixed(2)} C° com ${response.data['weather'][0]['description']} em ${response.data['name']} no dia ${formataData(data.toString())} às ${formataData(data.toString(), isData: false)}');
     } else {
       print('Algo deu errado');
     }
